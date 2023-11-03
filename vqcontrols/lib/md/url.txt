@@ -1,0 +1,43 @@
+Sintaxis URI especial para AutoURLDetect
+========================================
+
+------------ Special treatment when URI ends with(not includes)
+    )],;.:?!
+    
+------------SUMARY
+USER, PASSWORD, HOST = All ASCII except CTL SPACE " ' ` <> {} /\:@#
+HEADERS = All ASCII except CTL SPACE " ' ` <> {} #?
+PATH = All ASCII except CTL SPACE " ' ` <> {} #
+FRAGMENT = All ASCII except CTL SPACE " ' ` <> {} #?
+
+TL-LABEL = AD+-%
+TL-USER = AD+-%
+--------------------------------------
+    :@&=?/\.
+    
+USER = All ASCII except CTL SPACE " ' ` <> {} /\:@#
+PASSWORD = All ASCII except CTL SPACE " ' ` <> {} /\:@#
+LABEL = All ASCII except CTL SPACE " ' ` <> {} ./\:@#
+
+NAME = All ASCII except CTL SPACE " ' ` <> {} #?&=
+VALUE = All ASCII except CTL SPACE " ' ` <> {} #?&=
+
+LOGIN = [USER[:PASSWORD]@]HOST[:PORT]
+HOST = LABEL[.LABEL]
+PORT = DIGITS
+HEADERS = NAME=VALUE[&NAME=VALUE]
+
+file://[LOGIN][(/|\)PATH][#FRAGMENT]
+ftp://LOGIN[(/|\)PATH][#FRAGMENT]
+http://LOGIN[(/|\)PATH][#FRAGMENT]
+https://LOGIN[(/|\)PATH][#FRAGMENT]
+mailto:[LOGIN][?HEADERS]
+
+small url
+TL-LABEL[.TL-LABEL].TLD[/PATH][#FRAGMENT]
+[TL-USER @] TL-LABEL[.TL-LABEL].TLD[?HEADERS]
+
+
+------------- recognized TLDs
+
+see Basic_ccTLD.txt, Basic_gTLD.txt and Basic_oTLD.txt

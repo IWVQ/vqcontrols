@@ -1,0 +1,80 @@
+Gramatica y semantica para marcado de texto
+===========================================
+
+- *negrita*
+- _cursiva_
+- &subrayado&
+- ~tachado~
+- `codigo`
+- [enlace](http://www.enlace.com "titulo")
+- \t, \x13, \123, \u1243, escape, unicode,
+- mailto:autourldetect@gmail.com
+- "comillas", apostrofe'
+- ![imagen](E:\imagen.png "titulo")
+- (c)Copyright, (C)Copyright
+
+Especificaciones
+-----------------
+
+- el salto de linea sera simplemente un salto comun
+- para codificar ` en fragmento de codigo hacer `` dentro del entorno
+- autodeteccion de URL dentro de fragmentos de codigo
+- la descripción de autodeteccion url se encuentra en url.txt
+- la sintaxis del fragmento de codigo es definida en configuraciones de estilo
+- se permite enlaces anidados
+- formatos soportados en imagenes:
+    png, bmp, jpg, tiff, etc(los soportados por TPicture)
+- el sangrado y otros estilos estan en configuracion
+
+Caracteres especiales
+---------------------
+
+- caracteres de espaciado: ESPACIO TAB
+- caracteres de final de linea: CR LF CRLF
+
+Caracter de escape
+------------------
+
+see Hoja_de_diseño.txt
+En otro caso el caracter marcado se copia, util para forzar la insercion de simbolos de marcado
+
+Direccion de enlace o figura
+----------------------------
+- paginas
+- url
+- archivos
+- sin direccion
+
+[enlace](https://direccion.org "sugerencia")
+[enlace]https://autourl.asociado.com 
+[enlace]"sugerencia asociada"
+
+[enlace](E:\carpeta\archivo.png "sugerencia")
+[enlace]relative\autopath\asosciated.html
+[enlace]E:\autopath\asociado.png
+
+[enlace](/Nueva Carpeta (2)/archivo.png "sugerencia")
+[enlace]/autopath/asociado.png
+[enlace]relative\path\page.html
+[enlace]file://E:\file.txt 
+
+[enlace]
+
+[enlace](https://wikipedia.org "acceder a wikipedia")
+
+![12]
+
+![texto](dir\image.png "titulo")
+
+[wikipedia.org](https://es.wikipedia.org/turing_machine "wikipedia")
+
+
+
+![E:\image1.png[]]
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+Cursor              X   Y
+------              --  --
+
+cursor_spin         04  00
+cursor_gripper      11  02
+cursor_pan          09  09
+cursor_zoomin       06  07
+cursor_zoomout      06  07
+cursor_rotate       11  11
+cursor_target       14  14
+cursor_line         08  03
+cursor_kitenesw     11  11
+cursor_kitens       06  11
+cursor_kitewe       11  06
+cursor_kitenw       08  08
+cursor_kiten        06  11
+cursor_kitene       03  08
+cursor_kitew        11  06
+cursor_kitee        03  06
+cursor_kitesw       08  03
+cursor_kites        06  03
+cursor_kitese       03  03
+
+BeamThreshold: 2
+Nota: los cursores pueden cambiar

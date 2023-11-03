@@ -1,0 +1,54 @@
+.amsterdam	generic	Gemeente Amsterdam
+.apple	generic	Apple Inc.
+.bar	generic	Punto 2012 Sociedad Anonima Promotora de Inversion de Capital Variable
+.bcn	generic	Municipi de Barcelona
+.berlin	generic	dotBERLIN GmbH &amp; Co. KG
+.bible	generic	American Bible Society
+.brussels	generic	DNS.be vzw
+.bzh	generic	Association www.bzh
+.cancerresearch	generic	Australian Cancer Research Foundation
+.cern	generic	European Organization for Nuclear Research ("CERN")
+.cloud	generic	ARUBA PEC S.p.A.
+.club	generic	.CLUB DOMAINS, LLC
+.com	generic	VeriSign Global Registry Services
+.cymru	generic	Nominet UK
+.cyou	generic	Shortdot SA
+.desi	generic	Desi Networks LLC
+.design	generic	Top Level Design, LLC
+.domains	generic	Binky Moon, LLC
+.eus	generic	Puntueus Fundazioa
+.frl	generic	FRLregistry B.V.
+.gal	generic	Asociación puntoGAL
+.gdn	generic	Joint Stock Company "Navigation-information systems"
+.global	generic	Dot Global Domain Registry Limited
+.hamburg	generic	Hamburg Top-Level-Domain GmbH
+.hiv	generic	UNR Corp.
+.info	generic	Afilias Limited
+.istanbul	generic	Istanbul Metropolitan Municipality
+.kiwi	generic	DOT KIWI LIMITED
+.krd	generic	KRG Department of Information Technology
+.lat	generic	ECOM-LAC Federación de Latinoamérica y el Caribe para Internet y el Comercio Electrónico
+.lgbt	generic	Afilias Limited
+.london	generic	Dot London Domains Limited
+.mobi	generic	Afilias Technologies Limited dba dotMobi
+.moe	generic	Interlink Co., Ltd.
+.net	generic	VeriSign Global Registry Services
+.ngo	generic	Public Interest Registry
+.nyc	generic	The City of New York by and through the New York City Department of Information Technology &amp; Telecommunications
+.one	generic	One.com A/S
+.ong	generic	Public Interest Registry
+.online	generic	DotOnline Inc.
+.ooo	generic	INFIBEAM INCORPORATION LIMITED
+.org	generic	Public Interest Registry (PIR)
+.ovh	generic	OVH SAS
+.paris	generic	City of Paris
+.quebec	generic	PointQuébec Inc
+.rio	generic	Empresa Municipal de Informática SA - IPLANRIO
+.saarland	generic	dotSaarland GmbH
+.scot	generic	Dot Scot Registry Limited
+.tech	generic	Personals TLD Inc.
+.tokyo	generic	GMO Registry, Inc.
+.top	generic	Jiangsu Bangning Science &amp; Technology Co.,Ltd.
+.vlaanderen	generic	DNS.be vzw
+.wales	generic	Nominet UK
+.xyz	generic	XYZ.COM LLC

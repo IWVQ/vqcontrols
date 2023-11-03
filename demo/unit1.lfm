@@ -1,0 +1,1867 @@
+object Form1: TForm1
+  Left = 264
+  Height = 544
+  Top = 78
+  Width = 923
+  Caption = 'Demo'
+  ClientHeight = 524
+  ClientWidth = 923
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object vqControlBar1: TvqControlBar
+    Left = 0
+    Height = 80
+    Top = 0
+    Width = 923
+    Align = alTop
+    DockSite = False
+    RowSize = 27
+    Magnetic = True
+    HorizontalOnly = False
+    MoveThreshold = 7
+    MagneticThreshold = 5
+    object vqToolBar2: TvqToolBar
+      Left = 16
+      Height = 22
+      Top = 29
+      Width = 150
+      Align = alNone
+      Caption = 'vqToolBar2'
+      Constraints.MinWidth = 45
+      EdgeBorders = []
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = ImageList2
+      TabOrder = 0
+      Wrapable = False
+      HideClippedButtons = False
+      ChevronMode = vqtchNone
+      MinFloatingSize = 0
+      object ToolButton1: TToolButton
+        Left = 1
+        Top = 0
+        Caption = 'ToolButton1'
+        ImageIndex = 0
+      end
+      object ToolButton2: TToolButton
+        Left = 24
+        Top = 0
+        Caption = 'ToolButton2'
+        ImageIndex = 1
+      end
+      object ToolButton3: TToolButton
+        Left = 47
+        Top = 0
+        Caption = 'ToolButton3'
+        ImageIndex = 2
+      end
+      object ToolButton4: TToolButton
+        Left = 70
+        Top = 0
+        Caption = 'ToolButton4'
+        ImageIndex = 3
+      end
+      object ToolButton5: TToolButton
+        Left = 93
+        Top = 0
+        Caption = 'ToolButton5'
+        ImageIndex = 5
+      end
+    end
+    object vqToolBar3: TvqToolBar
+      Left = 400
+      Height = 22
+      Top = 2
+      Width = 374
+      Align = alNone
+      Caption = 'vqToolBar3'
+      Constraints.MinWidth = 45
+      EdgeBorders = []
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Images = ImageList2
+      List = True
+      ShowCaptions = True
+      TabOrder = 1
+      Wrapable = False
+      HideClippedButtons = True
+      ChevronMode = vqtchPopupMenu
+      MinFloatingSize = 0
+      object ToolButton6: TToolButton
+        Left = 1
+        Top = 0
+        Caption = 'ToolButton6'
+        ImageIndex = 1
+      end
+      object ToolButton7: TToolButton
+        Left = 92
+        Top = 0
+        Caption = 'ToolButton7'
+        ImageIndex = 2
+      end
+      object ToolButton8: TToolButton
+        Left = 183
+        Top = 0
+        Caption = 'ToolButton8'
+        DropdownMenu = PopupMenu2
+        Style = tbsDropDown
+      end
+      object ToolButton9: TToolButton
+        Left = 268
+        Top = 0
+        Caption = 'ToolButton9'
+        ImageIndex = 5
+      end
+    end
+    object vqToolBar4: TvqToolBar
+      Left = 632
+      Height = 22
+      Top = 56
+      Width = 120
+      Align = alNone
+      Caption = 'vqToolBar4'
+      Constraints.MaxWidth = 120
+      Constraints.MinWidth = 45
+      EdgeBorders = []
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Flat = False
+      TabOrder = 2
+      Wrapable = False
+      HideClippedButtons = False
+      ChevronMode = vqtchPopupToolBar
+      MinFloatingSize = 0
+      object ToolButton10: TToolButton
+        Left = 1
+        Top = 0
+        Caption = 'ToolButton10'
+      end
+      object ToolButton11: TToolButton
+        Left = 24
+        Top = 0
+        Caption = 'ToolButton11'
+      end
+      object ToolButton12: TToolButton
+        Left = 47
+        Top = 0
+        Caption = 'ToolButton12'
+      end
+      object ToolButton26: TToolButton
+        Left = 70
+        Top = 0
+        Caption = 'ToolButton26'
+        Style = tbsDropDown
+      end
+    end
+    object Panel2: TPanel
+      Left = 192
+      Height = 49
+      Top = 29
+      Width = 170
+      Caption = 'Panel2'
+      Constraints.MinWidth = 45
+      TabOrder = 3
+    end
+  end
+  object vqToolBar1: TvqToolBar
+    Left = 0
+    Height = 104
+    Top = 80
+    Width = 923
+    ButtonHeight = 100
+    ButtonWidth = 23
+    Caption = 'vqToolBar1'
+    TabOrder = 1
+    Wrapable = False
+    OnResize = vqToolBar1Resize
+    HideClippedButtons = False
+    ChevronMode = vqtchNone
+    MinFloatingSize = 0
+    object vqToolPanel1: TvqToolPanel
+      Left = 1
+      Height = 100
+      Top = 2
+      Width = 186
+      Spacing = 0
+      TextFormat.Alignment = taCenter
+      TextFormat.Layout = tlCenter
+      Caption = 'Edit'
+      TabOrder = 0
+      TabStop = True
+      DropDownAlignment = taLeftJustify
+      DropDownLayout = tlTop
+      DropDownOrientation = vqHorizontal
+      Orientation = vqHorizontal
+      Kind = vqtbkButtonDrop
+      MinExpandWidth = 150
+      Folded = False
+      object vqToolButton2: TvqToolButton
+        Left = 8
+        Height = 68
+        Top = 10
+        Width = 70
+        Spacing = 0
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Caption = 'Paste'
+        TabOrder = 0
+        TabStop = True
+        DropDownAlignment = taLeftJustify
+        DropDownLayout = tlTop
+        DropDownOrientation = vqHorizontal
+        Orientation = vqVertical
+        Kind = vqtbkDropDown
+      end
+      object vqQuickButton8: TvqQuickButton
+        Left = 85
+        Height = 22
+        Top = 10
+        Width = 93
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton9: TvqQuickButton
+        Left = 85
+        Height = 22
+        Top = 32
+        Width = 93
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton10: TvqQuickButton
+        Left = 85
+        Height = 22
+        Top = 56
+        Width = 93
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+    end
+    object ToolButton13: TToolButton
+      Left = 187
+      Height = 100
+      Top = 2
+      Caption = 'ToolButton13'
+      Style = tbsDivider
+    end
+    object vqToolPanel2: TvqToolPanel
+      Left = 192
+      Height = 100
+      Top = 2
+      Width = 300
+      Spacing = 0
+      TextFormat.Alignment = taCenter
+      TextFormat.Layout = tlCenter
+      Caption = 'Font'
+      TabOrder = 1
+      TabStop = True
+      DropDownAlignment = taLeftJustify
+      DropDownLayout = tlTop
+      DropDownOrientation = vqHorizontal
+      Orientation = vqVertical
+      Kind = vqtbkButtonDrop
+      MinExpandWidth = 300
+      Folded = False
+      object vqToolBar5: TvqToolBar
+        Left = 2
+        Height = 26
+        Top = 10
+        Width = 296
+        BorderSpacing.Top = 8
+        Caption = 'vqToolBar5'
+        EdgeBorders = []
+        ShowCaptions = True
+        TabOrder = 0
+        Wrapable = False
+        HideClippedButtons = False
+        ChevronMode = vqtchNone
+        MinFloatingSize = 0
+        object Edit2: TEdit
+          Left = 42
+          Height = 23
+          Top = 0
+          Width = 128
+          TabOrder = 0
+          Text = 'Times New Roman'
+        end
+        object ComboBox1: TComboBox
+          Left = 175
+          Height = 23
+          Top = 0
+          Width = 52
+          ItemHeight = 15
+          ItemIndex = 2
+          Items.Strings = (
+            '9'
+            '10'
+            '11'
+            '12'
+            '14'
+            '16'
+            '18'
+            '20'
+          )
+          TabOrder = 1
+          Text = '11'
+        end
+        object vqQuickButton14: TvqQuickButton
+          Left = 1
+          Height = 22
+          Top = 0
+          Width = 41
+          Caption = 'Aa'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Times New Roman'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsItalic]
+          ParentFont = False
+          OwnerDraw = False
+          DropDownOrientation = vqHorizontal
+        end
+        object ToolButton27: TToolButton
+          Left = 232
+          Top = 0
+          Caption = 'A'
+        end
+        object ToolButton28: TToolButton
+          Left = 255
+          Top = 0
+          Caption = 'a'
+        end
+        object Label3: TLabel
+          Left = 170
+          Height = 22
+          Top = 0
+          Width = 5
+          AutoSize = False
+          Caption = ' '
+          ParentColor = False
+        end
+        object ToolButton25: TToolButton
+          Left = 227
+          Height = 22
+          Top = 0
+          Caption = 'ToolButton25'
+          Style = tbsDivider
+        end
+      end
+      object vqToolBar6: TvqToolBar
+        Left = 2
+        Height = 26
+        Top = 44
+        Width = 296
+        BorderSpacing.Top = 8
+        Caption = 'vqToolBar6'
+        EdgeBorders = []
+        ShowCaptions = True
+        TabOrder = 1
+        Wrapable = False
+        HideClippedButtons = False
+        ChevronMode = vqtchNone
+        MinFloatingSize = 0
+        object ToolButton16: TToolButton
+          Left = 1
+          Top = 0
+          Caption = 'B'
+        end
+        object ToolButton17: TToolButton
+          Left = 24
+          Top = 0
+          Caption = 'I'
+        end
+        object ToolButton18: TToolButton
+          Left = 47
+          Top = 0
+          Caption = 'U'
+        end
+        object ToolButton19: TToolButton
+          Left = 70
+          Top = 0
+          Caption = 'S'
+        end
+        object ToolButton20: TToolButton
+          Left = 93
+          Top = 0
+          Caption = 'X²'
+        end
+        object ToolButton21: TToolButton
+          Left = 116
+          Top = 0
+          Caption = 'X₂'
+        end
+        object ToolButton22: TToolButton
+          Left = 139
+          Height = 22
+          Top = 0
+          Caption = 'ToolButton22'
+          Style = tbsDivider
+        end
+        object ToolButton23: TToolButton
+          Left = 144
+          Top = 0
+          Caption = 'b'
+          Style = tbsDropDown
+        end
+        object ToolButton24: TToolButton
+          Left = 179
+          Top = 0
+          Caption = 'f'
+          Style = tbsDropDown
+        end
+      end
+    end
+    object ToolButton14: TToolButton
+      Left = 492
+      Height = 100
+      Top = 2
+      Caption = 'ToolButton14'
+      Style = tbsDivider
+    end
+    object vqToolPanel3: TvqToolPanel
+      Left = 497
+      Height = 100
+      Top = 2
+      Width = 227
+      Spacing = 0
+      TextFormat.Alignment = taCenter
+      TextFormat.Layout = tlCenter
+      Caption = 'Pages'
+      TabOrder = 2
+      TabStop = True
+      DropDownAlignment = taLeftJustify
+      DropDownLayout = tlTop
+      DropDownOrientation = vqHorizontal
+      Orientation = vqHorizontal
+      Kind = vqtbkButtonDrop
+      MinExpandWidth = 150
+      Folded = False
+      object vqToolButton3: TvqToolButton
+        Left = 8
+        Height = 68
+        Top = 10
+        Width = 64
+        Spacing = 0
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Caption = 'New page'
+        TabOrder = 0
+        TabStop = True
+        DropDownAlignment = taLeftJustify
+        DropDownLayout = tlTop
+        DropDownOrientation = vqHorizontal
+        Orientation = vqVertical
+        Kind = vqtbkDropDown
+      end
+      object vqButton2: TvqButton
+        Left = 80
+        Height = 68
+        Top = 10
+        Width = 64
+        Spacing = 0
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Caption = 'Page break'
+        TabOrder = 1
+        TabStop = True
+        Checkable = False
+      end
+      object vqButton3: TvqButton
+        Left = 152
+        Height = 68
+        Top = 10
+        Width = 64
+        Spacing = 0
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Caption = 'Design'
+        TabOrder = 2
+        TabStop = True
+        Checkable = False
+      end
+    end
+    object ToolButton15: TToolButton
+      Left = 724
+      Height = 100
+      Top = 2
+      Caption = 'ToolButton15'
+      Style = tbsDivider
+    end
+    object vqToolPanel4: TvqToolPanel
+      Left = 729
+      Height = 100
+      Top = 2
+      Width = 150
+      Spacing = 0
+      TextFormat.Alignment = taCenter
+      TextFormat.Layout = tlCenter
+      Caption = 'Insert'
+      TabOrder = 3
+      TabStop = True
+      DropDownAlignment = taLeftJustify
+      DropDownLayout = tlTop
+      DropDownOrientation = vqHorizontal
+      Orientation = vqHorizontal
+      Kind = vqtbkButtonDrop
+      MinExpandWidth = 150
+      Folded = False
+      object vqQuickButton11: TvqQuickButton
+        Left = 8
+        Height = 22
+        Top = 10
+        Width = 128
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton12: TvqQuickButton
+        Left = 8
+        Height = 22
+        Top = 32
+        Width = 128
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton13: TvqQuickButton
+        Left = 8
+        Height = 22
+        Top = 56
+        Width = 128
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 5
+    Height = 330
+    Top = 189
+    Width = 913
+    ActivePage = TabSheet2
+    Align = alClient
+    BorderSpacing.Around = 5
+    TabIndex = 1
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Controls'
+      ClientHeight = 302
+      ClientWidth = 905
+      OnContextPopup = TabSheet1ContextPopup
+      object vqButton1: TvqButton
+        Left = 8
+        Height = 25
+        Top = 32
+        Width = 139
+        Spacing = 5
+        Glyph.TransparentGlyph = True
+        Glyph.Glyph.Data = {
+          76060000424D7606000000000000360000002800000014000000140000000100
+          2000000000004006000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000FF616920FF4E6376FF2F67B0FF0979BFFF0993BFFF48B4B0FF28C868FF19
+          D911000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000FF170710FF3C3CA0FF1C2EFFFF1949FFFF1F68FFFF23
+          85FFFF22A0FFFF1FB9FFFF18D2FFFF15EAF8FB52FD90F3A0FF10000000000000
+          00000000000000000000000000000000000000000000FF5D4830FF4534E9FF27
+          1AFFFF2833FFFF3356FFFF3B76FFFF3F93FFFF3EAEFFFF3AC7FFFF32E0FFFE26
+          F7FFF018FFFFD91AFFD1CB52FF16000000000000000000000000000000000000
+          0000FF825D1AFF5D29EFFF501EFFFF4B31FFFF4543FFFF4D62FFFF5683FFFF5B
+          A1FFFF5BBCFFFF56D5FFFF4CEDFFF83FFEFFE22EFFFFCA1CFFFFB425FFD6AA51
+          FF1000000000000000000000000000000000FF833CC4FF751CFFFF7232FFFF6F
+          46FFFF6958FFFF686FFFFF7291FFFF77AFFFFF77CAFFFF71E3FFFE65F9FFEC56
+          FFFFD444FFFFBC2FFFFFA319FFFF922FFF9A000000000000000000000000FFA9
+          584BFF9513FFFF942BFFFF9343FFFF905AFFFF8D6EFFFF8780FFFF8D9EFFFF94
+          BDFFFF93D8FFFF8BF1FFF57EFFFFDE6CFFFFC657FFFFAC40FFFF9328FFFF7910
+          FFFF9172FF2C0000000000000000FFB512A6FFB31EFFFFB238FFFFB252FFFFB0
+          6AFFFFAE82FFFFAB96FFFFA8ACFFFFAFCBFFFFAFE7FFFCA5FCFFE894FFFFD07F
+          FFFFB667FFFF9C4FFFFF8135FFFF671BFFFF6948FF920000000000000000FFD2
+          32F2FFCF26FFFFCF41FFFFCF5CFFFFCE77FFFFCE91FFFFCCA9FFFFC9BEFFFFCB
+          D9FFFFCAF4FFF2BCFFFFD9A7FFFFBF8EFFFFA574FFFF8A59FFFF6E3EFFFF5323
+          FFFF4629FFC800000000FFFBD10DFFEB0FFFFFEB2BFFFFEB47FFFFEB63FFFFEA
+          7FFFFFEA9BFFFFEAB6FFFFEAD0FFFFE9E8FFFAE3FDFFE3CDFFFFC8B3FFFFAC97
+          FFFF907BFFFF745FFFFF5843FFFF3C27FFFF362CFFFF00000000FDFFC01AF7FE
+          10FFF7FE2CFFF7FE48FFF7FE64FFF7FE80FFF7FE9DFFF7FEB9FFF7FED5FFF7FE
+          EFFFEDF4FFFFD2D9FFFFB6BDFFFF9AA1FFFF7E85FFFF6269FFFF454CFFFF2930
+          FFFF0D14FFFF0000000000000000DDFF14FFDDFF29FFDDFF45FFDDFF60FFDDFF
+          7CFFDCFF97FFDCFFB1FFDAFFC8FFD9FFE0FFD7FDFAFFC6EBFFFFAED1FFFF93B6
+          FFFF789BFFFF5D7FFFFF4163FFFF2548FFFF3A48FFE80000000000000000C5FF
+          34D2C1FF22FFC1FF3DFFC0FF58FFC0FF71FFBEFF8AFFBCFFA0FFB8FFB4FFBEFF
+          D2FFBDFFEEFFB1F8FEFF9EE1FFFF87C8FFFF6EAEFFFF5493FFFF3A78FFFF1F5D
+          FFFF3857FFB20000000000000000ACFF3D7BA4FF19FFA4FF32FFA2FF4BFFA1FF
+          62FF9EFF78FF99FF8BFF9AFFA4FFA2FFC4FFA1FFDFFF98FEF7FF89EFFFFF76D7
+          FFFF60BEFFFF48A4FFFF2F8AFFFF1670FFFF3F6DFF620000000000000000A3FF
+          5B168CFF2DF585FF24FF83FF3BFF80FF50FF7BFF63FF77FF77FF7FFF97FF85FF
+          B6FF85FFD1FF7EFFEAFF72FAFDFF61E5FFFF4ECDFFFF38B4FFFF219BFFFF1D84
+          FFE2C8D5FF0A0000000000000000000000007DFF446965FF14FF62FF28FF5DFF
+          3CFF57FF4DFF5AFF69FF64FF8AFF69FFA8FF69FFC3FF63FFDCFF59FFF4FF4BF2
+          FFFF39DBFFFF26C3FFFF11AAFFFF3B9EFF480000000000000000000000000000
+          0000000000005DFF3D9F3FFF14FF39FF25FF36FF3AFF40FF5CFF49FF7DFF4DFF
+          9AFF4DFFB5FF48FFCEFF3FFFE6FF33FCFBFF23E9FFFF12D1FFFF3FC0FF6D0000
+          00000000000000000000000000000000000000000000000000004EFF467A2EFF
+          2BFD1BFF2DFF26FF4FFF2DFF6FFF31FF8CFF30FFA7FF2CFFC0FF25FFD9FF1AFF
+          F0FF13F6FFF04DE3FF6100000000000000000000000000000000000000000000
+          000000000000000000000000000046FF482237FF42A036FF54F512FF61FF15FF
+          7EFF15FF99FF11FFB2FF1DFFCCE818FFE5899FFFFA2000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000E7FFEA0157FF7C3102FF754002FF904082FFC131000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Layout = blGlyphLeft
+        Caption = 'vqButton1'
+        TabOrder = 0
+        TabStop = True
+        Checkable = True
+      end
+      object vqToolButton1: TvqToolButton
+        Left = 8
+        Height = 25
+        Top = 72
+        Width = 139
+        Spacing = 5
+        Glyph.TransparentGlyph = True
+        Glyph.Glyph.Data = {
+          76060000424D7606000000000000360000002800000014000000140000000100
+          2000000000004006000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000FF616920FF4E6376FF2F67B0FF0979BFFF0993BFFF48B4B0FF28C868FF19
+          D911000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000FF170710FF3C3CA0FF1C2EFFFF1949FFFF1F68FFFF23
+          85FFFF22A0FFFF1FB9FFFF18D2FFFF15EAF8FB52FD90F3A0FF10000000000000
+          00000000000000000000000000000000000000000000FF5D4830FF4534E9FF27
+          1AFFFF2833FFFF3356FFFF3B76FFFF3F93FFFF3EAEFFFF3AC7FFFF32E0FFFE26
+          F7FFF018FFFFD91AFFD1CB52FF16000000000000000000000000000000000000
+          0000FF825D1AFF5D29EFFF501EFFFF4B31FFFF4543FFFF4D62FFFF5683FFFF5B
+          A1FFFF5BBCFFFF56D5FFFF4CEDFFF83FFEFFE22EFFFFCA1CFFFFB425FFD6AA51
+          FF1000000000000000000000000000000000FF833CC4FF751CFFFF7232FFFF6F
+          46FFFF6958FFFF686FFFFF7291FFFF77AFFFFF77CAFFFF71E3FFFE65F9FFEC56
+          FFFFD444FFFFBC2FFFFFA319FFFF922FFF9A000000000000000000000000FFA9
+          584BFF9513FFFF942BFFFF9343FFFF905AFFFF8D6EFFFF8780FFFF8D9EFFFF94
+          BDFFFF93D8FFFF8BF1FFF57EFFFFDE6CFFFFC657FFFFAC40FFFF9328FFFF7910
+          FFFF9172FF2C0000000000000000FFB512A6FFB31EFFFFB238FFFFB252FFFFB0
+          6AFFFFAE82FFFFAB96FFFFA8ACFFFFAFCBFFFFAFE7FFFCA5FCFFE894FFFFD07F
+          FFFFB667FFFF9C4FFFFF8135FFFF671BFFFF6948FF920000000000000000FFD2
+          32F2FFCF26FFFFCF41FFFFCF5CFFFFCE77FFFFCE91FFFFCCA9FFFFC9BEFFFFCB
+          D9FFFFCAF4FFF2BCFFFFD9A7FFFFBF8EFFFFA574FFFF8A59FFFF6E3EFFFF5323
+          FFFF4629FFC800000000FFFBD10DFFEB0FFFFFEB2BFFFFEB47FFFFEB63FFFFEA
+          7FFFFFEA9BFFFFEAB6FFFFEAD0FFFFE9E8FFFAE3FDFFE3CDFFFFC8B3FFFFAC97
+          FFFF907BFFFF745FFFFF5843FFFF3C27FFFF362CFFFF00000000FDFFC01AF7FE
+          10FFF7FE2CFFF7FE48FFF7FE64FFF7FE80FFF7FE9DFFF7FEB9FFF7FED5FFF7FE
+          EFFFEDF4FFFFD2D9FFFFB6BDFFFF9AA1FFFF7E85FFFF6269FFFF454CFFFF2930
+          FFFF0D14FFFF0000000000000000DDFF14FFDDFF29FFDDFF45FFDDFF60FFDDFF
+          7CFFDCFF97FFDCFFB1FFDAFFC8FFD9FFE0FFD7FDFAFFC6EBFFFFAED1FFFF93B6
+          FFFF789BFFFF5D7FFFFF4163FFFF2548FFFF3A48FFE80000000000000000C5FF
+          34D2C1FF22FFC1FF3DFFC0FF58FFC0FF71FFBEFF8AFFBCFFA0FFB8FFB4FFBEFF
+          D2FFBDFFEEFFB1F8FEFF9EE1FFFF87C8FFFF6EAEFFFF5493FFFF3A78FFFF1F5D
+          FFFF3857FFB20000000000000000ACFF3D7BA4FF19FFA4FF32FFA2FF4BFFA1FF
+          62FF9EFF78FF99FF8BFF9AFFA4FFA2FFC4FFA1FFDFFF98FEF7FF89EFFFFF76D7
+          FFFF60BEFFFF48A4FFFF2F8AFFFF1670FFFF3F6DFF620000000000000000A3FF
+          5B168CFF2DF585FF24FF83FF3BFF80FF50FF7BFF63FF77FF77FF7FFF97FF85FF
+          B6FF85FFD1FF7EFFEAFF72FAFDFF61E5FFFF4ECDFFFF38B4FFFF219BFFFF1D84
+          FFE2C8D5FF0A0000000000000000000000007DFF446965FF14FF62FF28FF5DFF
+          3CFF57FF4DFF5AFF69FF64FF8AFF69FFA8FF69FFC3FF63FFDCFF59FFF4FF4BF2
+          FFFF39DBFFFF26C3FFFF11AAFFFF3B9EFF480000000000000000000000000000
+          0000000000005DFF3D9F3FFF14FF39FF25FF36FF3AFF40FF5CFF49FF7DFF4DFF
+          9AFF4DFFB5FF48FFCEFF3FFFE6FF33FCFBFF23E9FFFF12D1FFFF3FC0FF6D0000
+          00000000000000000000000000000000000000000000000000004EFF467A2EFF
+          2BFD1BFF2DFF26FF4FFF2DFF6FFF31FF8CFF30FFA7FF2CFFC0FF25FFD9FF1AFF
+          F0FF13F6FFF04DE3FF6100000000000000000000000000000000000000000000
+          000000000000000000000000000046FF482237FF42A036FF54F512FF61FF15FF
+          7EFF15FF99FF11FFB2FF1DFFCCE818FFE5899FFFFA2000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000E7FFEA0157FF7C3102FF754002FF904082FFC131000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Layout = blGlyphLeft
+        Caption = 'vqToolButton1'
+        TabOrder = 1
+        TabStop = True
+        DropDownAlignment = taLeftJustify
+        DropDownLayout = tlTop
+        DropDownOrientation = vqHorizontal
+        DropDownMenu = PopupMenu1
+        Orientation = vqHorizontal
+        Kind = vqtbkDropDown
+      end
+      object vqColorButton1: TvqColorButton
+        Left = 8
+        Height = 25
+        Top = 104
+        Width = 139
+        Spacing = 30
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        Layout = blGlyphRight
+        BorderWidth = 1
+        Caption = 'Background'
+        TabOrder = 2
+        TabStop = True
+        Value = clBlack
+        Alpha = 255
+        ColorDialog = ColorDialog1
+        Options = [vqcboDefaultColor, vqcboNoneColor, vqcboAutoSizeColor]
+        ColorSize = 30
+      end
+      object vqFontButton1: TvqFontButton
+        Left = 8
+        Height = 41
+        Top = 136
+        Width = 139
+        Spacing = 0
+        Glyph.TransparentGlyph = True
+        TextFormat.Alignment = taCenter
+        TextFormat.Layout = tlCenter
+        BorderWidth = 1
+        Caption = 'fuente'
+        TabOrder = 3
+        TabStop = True
+        FontDialog = FontDialog1
+        Options = [vqfboShowSize]
+        WYSIWYG = True
+        FontAlignment = taCenter
+        SizeAlignment = taRightJustify
+        FontSpacing = 20
+      end
+      object vqArrow1: TvqArrow
+        Left = 12
+        Height = 23
+        Top = 232
+        Width = 20
+        AlignButton = udLeft
+        Associate = Edit1
+        Position = 0
+        Orientation = udHorizontal
+        Direction = updDown
+        Synchronize = vqArrow2
+        TabOrder = 4
+      end
+      object vqQuickButton1: TvqQuickButton
+        Left = 8
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+      end
+      object vqSwitch1: TvqSwitch
+        Left = 12
+        Height = 17
+        Top = 200
+        Width = 139
+        Spacing = 0
+        Layout = blGlyphTop
+        TextFormat.Layout = tlCenter
+        Alignment = taLeftJustify
+        Glyph.TransparentGlyph = True
+        Caption = 'vqSwitch1'
+        OnChange = vqSwitch1Change
+      end
+      object vqSlider1: TvqSlider
+        Left = 160
+        Height = 48
+        Top = 32
+        Width = 144
+        Color = clWhite
+        ParentColor = False
+        Orientation = vqHorizontal
+        TickOptions = [vqtoTopLeft, vqtoBottomRight]
+        Max = 10
+        Frequency = 1
+        Increment = 1
+        Reverse = False
+        Margin = 15
+        Padding = 5
+        Discrete = False
+        Magnetic = True
+        KnobSize = 10
+        TipPosition = vqsTipTop
+        TabOrder = 6
+      end
+      object vqDial1: TvqDial
+        Left = 160
+        Height = 114
+        Top = 112
+        Width = 136
+        ShowTicks = True
+        Max = 10
+        Frequency = 1
+        Increment = 1
+        Reverse = False
+        Margin = 5
+        KnobSize = 25
+        Discrete = False
+        Magnetic = True
+        TipPosition = vqdTipAround
+        TabOrder = 7
+      end
+      object Edit1: TEdit
+        Left = 32
+        Height = 23
+        Top = 232
+        Width = 94
+        Alignment = taCenter
+        TabOrder = 8
+        Text = '0'
+      end
+      object vqArrow2: TvqArrow
+        Left = 126
+        Height = 23
+        Top = 232
+        Width = 20
+        Associate = Edit1
+        Position = 0
+        Orientation = udHorizontal
+        Synchronize = vqArrow1
+        TabOrder = 9
+      end
+      object Bevel4: TBevel
+        Left = 312
+        Height = 338
+        Top = 8
+        Width = 10
+        Shape = bsLeftLine
+      end
+      object vqQuickButton3: TvqQuickButton
+        Left = 32
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        Kind = vqqbkArrowBottom
+        DropDownMenu = PopupMenu1
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton4: TvqQuickButton
+        Left = 56
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        Kind = vqqbkArrowLeft
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton5: TvqQuickButton
+        Left = 80
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        Kind = vqqbkArrowRight
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton6: TvqQuickButton
+        Left = 104
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        Kind = vqqbkArrowTop
+        DropDownOrientation = vqHorizontal
+      end
+      object vqQuickButton7: TvqQuickButton
+        Left = 128
+        Height = 19
+        Top = 8
+        Width = 19
+        OwnerDraw = False
+        Kind = vqqbkClose
+        DropDownOrientation = vqHorizontal
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Labels'
+      ClientHeight = 302
+      ClientWidth = 905
+      object vqDivider1: TvqDivider
+        Left = 8
+        Height = 15
+        Top = 8
+        Width = 373
+        Color = clNone
+        ParentColor = False
+        Indent = 60
+        Alignment = taCenter
+        Layout = tlCenter
+        Orientation = vqTextHorizontal
+        Caption = 'vqDivider1'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = 'Segoe UI Semibold'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object vqMarkLabel1: TvqMarkLabel
+        Left = 8
+        Height = 18
+        Top = 24
+        Width = 467
+        ParentShowHint = False
+        ShowHint = True
+        Options = [vqmoAutoURLDetect, vqmoCodeFenceAutoURL, vqmoCopyright]
+        MarkStyle.LinkNormal = clHighlight
+        MarkStyle.LinkHovered = clHotLight
+        MarkStyle.LinkVisited = 10766755
+        MarkStyle.LinkPressed = clHotLight
+        MarkStyle.CodeFore = clCaptionText
+        MarkStyle.CodeBack = 14408667
+        MarkStyle.CodeFace = 'Courier New'
+        MarkStyle.ImageFore = clGray
+        MarkStyle.UnderlineHotLink = True
+        AutoOpenURL = True
+        Caption = 'Label with *bold*, _italic_, &underline&, ~strikeout~, `code`,  [links]( https://es.wikipedia.org "wikipedia.org"), ![images](img/image.png), etc. es.wikipedia.org  '
+        Autosize = True
+        OnHyperlink = vqMarkLabel1Hyperlink
+      end
+      object vqLedLabel1: TvqLedLabel
+        Left = 8
+        Height = 21
+        Top = 56
+        Width = 56
+        Spacing = 3
+        Style.ColorOnDisabled = clGrayText
+        Style.ColorOffDisabled = clSilver
+        Style.ColorOn = clRed
+        Style.ColorOff = clSilver
+        DigitCount = 5
+        Alignment = taLeftJustify
+        Layout = tlCenter
+        LedAlignment = taRightJustify
+        Kind = vqlk7Segment
+        Caption = '12:24'
+      end
+      object Bevel3: TBevel
+        Left = 392
+        Height = 282
+        Top = 64
+        Width = 10
+        Shape = bsLeftLine
+      end
+      object Panel1: TPanel
+        Left = 8
+        Height = 208
+        Top = 88
+        Width = 376
+        Anchors = [akTop, akLeft, akBottom]
+        BevelOuter = bvNone
+        ClientHeight = 208
+        ClientWidth = 376
+        TabOrder = 0
+        object vqNotifier1: TvqNotifier
+          Left = 0
+          Height = 28
+          Top = 0
+          Width = 376
+          Align = alTop
+          ImageList = ImageList1
+          Kind = vqnkCustom
+          SingleLineCentered = True
+          FixedCloseBtn = False
+          BorderWidth = 2
+          EnableCloseBtn = True
+          WordWrap = False
+          Buttons = <>
+          OnCloseBtnClick = vqNotifier1CloseBtnClick
+        end
+        object vqAnimate1: TvqAnimate
+          Left = 0
+          Height = 180
+          Hint = 'Hint with bold  '
+          Top = 28
+          Width = 376
+          Align = alClient
+          ParentShowHint = False
+          ShowHint = True
+          ImageInterval = 100
+          Center = True
+          Proportional = False
+          Stretch = False
+          Step = 0
+          Active = False
+        end
+      end
+      object Button1: TButton
+        Left = 408
+        Height = 25
+        Top = 72
+        Width = 144
+        Caption = 'Show/Hide notification'
+        OnClick = Button1Click
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 408
+        Height = 25
+        Top = 104
+        Width = 144
+        Caption = 'Load animation'
+        OnClick = Button2Click
+        TabOrder = 2
+      end
+      object vqLedLabel2: TvqLedLabel
+        Left = 320
+        Height = 21
+        Top = 56
+        Width = 63
+        Spacing = 3
+        Style.ColorOnDisabled = clGrayText
+        Style.ColorOffDisabled = clSilver
+        Style.ColorOn = clRed
+        Style.ColorOff = clSilver
+        DigitCount = 5
+        Alignment = taLeftJustify
+        Layout = tlCenter
+        LedAlignment = taRightJustify
+        Kind = vqlk7Segment
+        Caption = '0'
+      end
+      object Button3: TButton
+        Left = 408
+        Height = 25
+        Top = 40
+        Width = 144
+        Caption = 'Run leds'
+        OnClick = Button3Click
+        TabOrder = 3
+      end
+      object Label1: TLabel
+        Left = 560
+        Height = 15
+        Top = 112
+        Width = 98
+        Caption = '*.gif; *.png; *.apng'
+        ParentColor = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'PageControl'
+      ClientHeight = 302
+      ClientWidth = 905
+      object vqPageControl1: TvqPageControl
+        Left = 8
+        Height = 288
+        Top = 8
+        Width = 432
+        Color = clWhite
+        ParentColor = False
+        PageIndex = -1
+        Options = [vqtoShowAddButton, vqtoShowCloseButtons, vqtoShowDropList, vqtoShowArrows]
+        TextFormat.Layout = tlCenter
+        Layout = blGlyphLeft
+        Images = ImageList2
+        LeftSpacing = 30
+        RightSpacing = 30
+        TabPosition = tpTop
+        TabWidth = 0
+        TabHeight = 28
+        OnCloseBtnClick = vqPageControl1CloseBtnClick
+        OnAddBtnClick = vqPageControl1AddBtnClick
+      end
+      object Bevel2: TBevel
+        Left = 448
+        Height = 338
+        Top = 8
+        Width = 10
+        Shape = bsLeftLine
+      end
+      object Button6: TButton
+        Left = 472
+        Height = 25
+        Top = 16
+        Width = 144
+        Caption = 'Insert start page'
+        OnClick = Button6Click
+        TabOrder = 1
+      end
+      object Button7: TButton
+        Left = 472
+        Height = 25
+        Top = 48
+        Width = 144
+        Caption = 'Remove start page'
+        OnClick = Button7Click
+        TabOrder = 2
+      end
+      object Button8: TButton
+        Left = 472
+        Height = 25
+        Top = 80
+        Width = 144
+        Caption = 'Move to start'
+        OnClick = Button8Click
+        TabOrder = 3
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'ListBox && MenuBox'
+      ClientHeight = 302
+      ClientWidth = 905
+      object vqListBox1: TvqListBox
+        Left = 8
+        Height = 282
+        Top = 8
+        Width = 192
+        Color = clWhite
+        ParentColor = False
+        ScrollBars = ssVertical
+        Images = ImageList2
+        MultiSelect = True
+        Clipping = False
+        ListHintFormat.Alignment = taCenter
+        ListHintFormat.Layout = tlCenter
+        ListHint = '<vacio>'
+        ItemIndex = -1
+        OwnerDraw = False
+        OwnerMeasure = False
+      end
+      object vqMenuBox1: TvqMenuBox
+        Left = 216
+        Height = 250
+        Top = 40
+        Width = 216
+        Color = clWhite
+        ParentColor = False
+        ScrollBars = ssNone
+        MultiSelect = True
+        Clipping = False
+        ItemIndex = -1
+        OwnerDraw = False
+        OwnerMeasure = False
+        SubMenuPopup = True
+        SeparatorTitle = False
+      end
+      object Bevel1: TBevel
+        Left = 442
+        Height = 290
+        Top = 8
+        Width = 10
+        Shape = bsLeftLine
+      end
+      object vqQuickButton2: TvqQuickButton
+        Left = 216
+        Height = 24
+        Top = 8
+        Width = 112
+        Caption = '<<'
+        OwnerDraw = False
+        DropDownOrientation = vqHorizontal
+        OnClick = vqQuickButton2Click
+      end
+      object Button4: TButton
+        Left = 464
+        Height = 25
+        Top = 24
+        Width = 136
+        Caption = 'Add list item'
+        OnClick = Button4Click
+        TabOrder = 2
+      end
+      object Button5: TButton
+        Left = 464
+        Height = 25
+        Top = 56
+        Width = 136
+        Caption = 'Delete list item'
+        OnClick = Button5Click
+        TabOrder = 3
+      end
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 280
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      object MenuItem31: TMenuItem
+        Caption = 'Exit'
+        OnClick = MenuItem31Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = '?'
+      object MenuItem25: TMenuItem
+        Caption = 'About'
+        OnClick = MenuItem25Click
+      end
+      object MenuItem30: TMenuItem
+        Caption = 'Help'
+        OnClick = MenuItem30Click
+      end
+    end
+  end
+  object FontDialog1: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 320
+    Top = 176
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 416
+    Top = 176
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 368
+    Top = 176
+    object MenuItem3: TMenuItem
+      Caption = 'MenuItem3'
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'MenuItem4'
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'MenuItem5'
+      object MenuItem7: TMenuItem
+        Caption = 'MenuItem7'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'MenuItem8'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'MenuItem9'
+      end
+    end
+    object MenuItem10: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'MenuItem6'
+    end
+  end
+  object ImageList1: TImageList
+    Height = 20
+    Width = 20
+    Left = 464
+    Top = 176
+    Bitmap = {
+      4C69060000001400000014000000000000000000000000000000000000000000
+      00000000000000000000FFFFFF2FFFFFFF73FFFFFF80FFFFFF80FFFFFF7BFFFF
+      FF38000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF4AFFFFFFD5FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE1FFFFFF63000000000000
+      0000000000000000000000000000000000000000000000000000FFFFFF01FFFF
+      FF9EFFFFFFFFFFFFFFFFECECFFFFBDBDFFFF9999FFFF9292FFFFBABAFFFFE6E6
+      FFFFFFFFFFFFFFFFFFFFFFFFFFBCFFFFFF100000000000000000000000000000
+      00000000000000000000FFFFFFA1FFFFFFFFF7F7FFFF9595FFFF0404FFFF7878
+      FFFFC3C3FFFFC2C2FFFF7474FFFF0404FFFF8787FFFFEBEBFFFFFFFFFFFFFFFF
+      FFCFFFFFFF0D00000000000000000000000000000000FFFFFF77FFFFFFFFF0F0
+      FFFF5B5BFFFF0404FFFF0404FFFFF7F7FFFFFFFFFFFFFFFFFFFFECECFFFF0404
+      FFFF0404FFFF4747FFFFE9E9FFFFFFFFFFFFFFFFFF9300000000000000000000
+      0000FFFFFF13FFFFFFF1FFFFFFFF7878FFFF0404FFFF0404FFFF0404FFFFE9E9
+      FFFFFFFFFFFFFFFFFFFFE6E6FFFF0404FFFF0404FFFF0404FFFF4C4CFFFFF8F8
+      FFFFFFFFFFFFFFFFFF370000000000000000FFFFFF77FFFFFFFFCDCDFFFF0404
+      FFFF0404FFFF0404FFFF0404FFFFD4D4FFFFFFFFFFFFFFFFFFFFD2D2FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFFADADFFFFFFFFFFFFFFFFFFA0000000000000
+      0000FFFFFFCDFFFFFFFF7373FFFF0404FFFF0404FFFF0404FFFF0404FFFFB9B9
+      FFFFFFFFFFFFFFFFFFFFB5B5FFFF0404FFFF0404FFFF0404FFFF0404FFFF4646
+      FFFFFFFFFFFFFFFFFFF10000000000000000FFFFFFFFF8F8FFFF0404FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF8989FFFFFFFFFFFFFFFFFFFF8989FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF0404FFFFE2E2FFFFFFFFFFFFFFFFFF2CFFFF
+      FF09FFFFFFFFE1E1FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF4141
+      FFFFFFFFFFFFFFFFFFFF2C2CFFFF0404FFFF0404FFFF0404FFFF0404FFFF0404
+      FFFFDCDCFFFFFFFFFFFFFFFFFF40FFFFFF07FFFFFFFFE1E1FFFF0404FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF0404FFFFF1F1FFFFECECFFFF0404FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF0404FFFFDEDEFFFFFFFFFFFFFFFFFF400000
+      0000FFFFFFFFFBFBFFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404
+      FFFFDCDCFFFFD4D4FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404
+      FFFFE4E4FFFFFFFFFFFFFFFFFF2500000000FFFFFFC4FFFFFFFF7878FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF0404FFFFBCBCFFFFB7B7FFFF0404FFFF0404
+      FFFF0404FFFF0404FFFF0404FFFF4E4EFFFFFFFFFFFFFFFFFFEC000000000000
+      0000FFFFFF6FFFFFFFFFCFCFFFFF0404FFFF0404FFFF0404FFFF0404FFFF0404
+      FFFF5E5EFFFF4B4BFFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFFBBBB
+      FFFFFFFFFFFFFFFFFF9D0000000000000000FFFFFF10FFFFFFEFFFFFFFFF8787
+      FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404FFFF0404
+      FFFF0404FFFF0404FFFF6C6CFFFFF8F8FFFFFFFFFFFFFFFFFF20000000000000
+      000000000000FFFFFF5EFFFFFFFFF8F8FFFF7878FFFF0404FFFF0404FFFFC5C5
+      FFFFFFFFFFFFFEFEFFFFBBBBFFFF0404FFFF0404FFFF5151FFFFEAEAFFFFFFFF
+      FFFFFFFFFF870000000000000000000000000000000000000000FFFFFF9EFFFF
+      FFFFF8F8FFFFB0B0FFFF1111FFFFD1D1FFFFFFFFFFFFFFFFFFFFC1C1FFFF0404
+      FFFF9D9DFFFFF6F6FFFFFFFFFFFFFFFFFFB20000000000000000000000000000
+      0000000000000000000000000000FFFFFF82FFFFFFFFFFFFFFFFF4F4FFFFCECE
+      FFFFBCBCFFFFBCBCFFFFC9C9FFFFF0F0FFFFFFFFFFFFFFFFFFFFFFFFFF9DFFFF
+      FF05000000000000000000000000000000000000000000000000000000000000
+      0000FFFFFF36FFFFFFB5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFC5FFFFFF4400000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFFFF17FFFF
+      FF4CFFFFFF7EFFFFFF80FFFFFF54FFFFFF200000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000E7FFEA0157FF7C3102FF754002FF904082FFC1310000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000046FF482237FF42A036FF54F512FF
+      61FF15FF7EFF15FF99FF11FFB2FF1DFFCCE818FFE5899FFFFA20000000000000
+      0000000000000000000000000000000000000000000000000000000000004EFF
+      467A2EFF2BFD1BFF2DFF26FF4FFF2DFF6FFF31FF8CFF30FFA7FF2CFFC0FF25FF
+      D9FF1AFFF0FF13F6FFF04DE3FF61000000000000000000000000000000000000
+      000000000000000000005DFF3D9F3FFF14FF39FF25FF36FF3AFF40FF5CFF49FF
+      7DFF4DFF9AFF4DFFB5FF48FFCEFF3FFFE6FF33FCFBFF23E9FFFF12D1FFFF3FC0
+      FF6D00000000000000000000000000000000000000007DFF446965FF14FF62FF
+      28FF5DFF3CFF57FF4DFF5AFF69FF64FF8AFF69FFA8FF69FFC3FF63FFDCFF59FF
+      F4FF4BF2FFFF39DBFFFF26C3FFFF11AAFFFF3B9EFF4800000000000000000000
+      0000A3FF5B168CFF2DF585FF24FF83FF3BFF80FF50FF7BFF63FF77FF77FF7FFF
+      97FF85FFB6FF85FFD1FF7EFFEAFF72FAFDFF61E5FFFF4ECDFFFF38B4FFFF219B
+      FFFF1D84FFE2C8D5FF0A0000000000000000ACFF3D7BA4FF19FFA4FF32FFA2FF
+      4BFFA1FF62FF9EFF78FF99FF8BFF9AFFA4FFA2FFC4FFA1FFDFFF98FEF7FF89EF
+      FFFF76D7FFFF60BEFFFF48A4FFFF2F8AFFFF1670FFFF3F6DFF62000000000000
+      0000C5FF34D2C1FF22FFC1FF3DFFC0FF58FFC0FF71FFBEFF8AFFBCFFA0FFB8FF
+      B4FFBEFFD2FFBDFFEEFFB1F8FEFF9EE1FFFF87C8FFFF6EAEFFFF5493FFFF3A78
+      FFFF1F5DFFFF3857FFB20000000000000000DDFF14FFDDFF29FFDDFF45FFDDFF
+      60FFDDFF7CFFDCFF97FFDCFFB1FFDAFFC8FFD9FFE0FFD7FDFAFFC6EBFFFFAED1
+      FFFF93B6FFFF789BFFFF5D7FFFFF4163FFFF2548FFFF3A48FFE800000000FDFF
+      C01AF7FE10FFF7FE2CFFF7FE48FFF7FE64FFF7FE80FFF7FE9DFFF7FEB9FFF7FE
+      D5FFF7FEEFFFEDF4FFFFD2D9FFFFB6BDFFFF9AA1FFFF7E85FFFF6269FFFF454C
+      FFFF2930FFFF0D14FFFF00000000FFFBD10DFFEB0FFFFFEB2BFFFFEB47FFFFEB
+      63FFFFEA7FFFFFEA9BFFFFEAB6FFFFEAD0FFFFE9E8FFFAE3FDFFE3CDFFFFC8B3
+      FFFFAC97FFFF907BFFFF745FFFFF5843FFFF3C27FFFF362CFFFF000000000000
+      0000FFD232F2FFCF26FFFFCF41FFFFCF5CFFFFCE77FFFFCE91FFFFCCA9FFFFC9
+      BEFFFFCBD9FFFFCAF4FFF2BCFFFFD9A7FFFFBF8EFFFFA574FFFF8A59FFFF6E3E
+      FFFF5323FFFF4629FFC80000000000000000FFB512A6FFB31EFFFFB238FFFFB2
+      52FFFFB06AFFFFAE82FFFFAB96FFFFA8ACFFFFAFCBFFFFAFE7FFFCA5FCFFE894
+      FFFFD07FFFFFB667FFFF9C4FFFFF8135FFFF671BFFFF6948FF92000000000000
+      0000FFA9584BFF9513FFFF942BFFFF9343FFFF905AFFFF8D6EFFFF8780FFFF8D
+      9EFFFF94BDFFFF93D8FFFF8BF1FFF57EFFFFDE6CFFFFC657FFFFAC40FFFF9328
+      FFFF7910FFFF9172FF2C000000000000000000000000FF833CC4FF751CFFFF72
+      32FFFF6F46FFFF6958FFFF686FFFFF7291FFFF77AFFFFF77CAFFFF71E3FFFE65
+      F9FFEC56FFFFD444FFFFBC2FFFFFA319FFFF922FFF9A00000000000000000000
+      000000000000FF825D1AFF5D29EFFF501EFFFF4B31FFFF4543FFFF4D62FFFF56
+      83FFFF5BA1FFFF5BBCFFFF56D5FFFF4CEDFFF83FFEFFE22EFFFFCA1CFFFFB425
+      FFD6AA51FF100000000000000000000000000000000000000000FF5D4830FF45
+      34E9FF271AFFFF2833FFFF3356FFFF3B76FFFF3F93FFFF3EAEFFFF3AC7FFFF32
+      E0FFFE26F7FFF018FFFFD91AFFD1CB52FF160000000000000000000000000000
+      0000000000000000000000000000FF170710FF3C3CA0FF1C2EFFFF1949FFFF1F
+      68FFFF2385FFFF22A0FFFF1FB9FFFF18D2FFFF15EAF8FB52FD90F3A0FF100000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000FF616920FF4E6376FF2F67B0FF0979BFFF0993BFFF48B4B0FF28
+      C868FF19D9110000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000E25A0013E25A006BE25A0080E25A0080E25A006EE25A
+      0013000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000E25A0024E25A00EFE25A
+      00FFE25A00FFE25A00FFE25A00FFE25A00EFE25A002100000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000E25A0067E25A00FFE25A00FFE25A00FFE25A00FFE25A00FFE25A
+      00FFE25A006E0000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000E25A0032E25A00FFE25A
+      00FFE25A00FFE25A00FFE25A00FFE25A00FFE25A003F00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000E25A00F3E25A00FFE25A00FFE25A00FFE25A00FFE25A
+      00FDE25B00030000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000E25A00B4E25A
+      00FFE25A00FFE25A00FFE25A00FFE25A00C00000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000E25A0076E25A00FFE25A00FFE25A00FFE25A00FFE25A
+      0081000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000E25A0037E25A
+      00FFE25A00FFE25A00FFE25A00FFE25A00400000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000E25A00F7E25A00FFE25A00FFE25A00FEE25A
+      0002000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000E25A
+      00BAE25A00FFE25A00FFE25A00C1000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000E25A007BE25A00FFE25A00FFE25A00810000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000E25A
+      003DE25A00FFE25A00FFE25A0041000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000E05C0001E25A00FEE25A00FEE15A00030000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000E25A00BFE25A00C000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000E25A0021E25A0022000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000E25A0016E25A0064E25A0080E25A0080E25A005EE25A
+      000F000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000E25A0031E25A00F1E25A
+      00FFE25A00FFE25A00FFE25A00FFE25A00EFE25A002100000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000E25A0024E25A00EDE25A00FFE25A00FFE25A00FFE25A00FFE25A
+      00E1E25A001F0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000F36B0030F36B007BF36B0093F36B00BBF36B00A7F36B0082F36B
+      0058F36B000E0000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000F36B002AF36B00C3F36B00DDF36B0064F36B
+      0040F36B008FF36B00FFF36B00FFF36B00FFF36B00EFF36B0072000000000000
+      0000000000000000000000000000000000000000000000000000F36B001FF36B
+      00EFF36B00FFF36B0073000000000000000000000000F36B0062F36B00FFF36B
+      00FFF36B00FFF36B00FFF36B0083000000000000000000000000000000000000
+      00000000000000000000F36B009EF36B00FFF36B00FFF36B00EDF36B000F0000
+      00000000000000000000F36B00E6F36B00FFF36B00FFF36B00FFF36B00FFF36B
+      0019000000000000000000000000000000000000000000000000F36B00BFF36B
+      00FFF36B00FFF36B00FFF36B0053000000000000000000000000F36B00BFF36B
+      00FFF36B00FFF36B00FFF36B00FFF36B00400000000000000000000000000000
+      00000000000000000000F36B005FF36B00FFF36B00FFF36B00F8F36B00290000
+      00000000000000000000F36B00BFF36B00FFF36B00FFF36B00FFF36B00FFF36B
+      003000000000000000000000000000000000000000000000000000000000F36B
+      0030F36B005DF36B002000000000000000000000000000000000F36B00F0F36B
+      00FFF36B00FFF36B00FFF36B00CA000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000F36B0056F36B00FFF36B00FFF36B00FFF36B00E9F36B002C0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000F36B0009F36B00DEF36B00FFF36B
+      00FFF36B00B7F36B001100000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000F36B0082F36B00FFF36B00DDF36B004A0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000F36B0016F36B00F7F36B0098F26A00040000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000F36B
+      0055F36B00B60000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000F36B007EF36B005B00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000F36B
+      0020F36B00100000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000F36B0040F36B
+      009DF36B00A6F36B004D00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000F36B0049F36B00FFF36B00FFF36B00FFF36B00FFF36B00640000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000F36B008AF36B00FFF36B
+      00FFF36B00FFF36B00FFF36B00BF000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000F36B0051F36B00FFF36B00FFF36B00FFF36B00FFF36B007B0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000F36B0050F36B
+      00B9F36B00BFF36B006800000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000A74E00BA9D755EFF939082FF939082FF939082FF939082FF939082FF9390
+      82FF939082FF939082FF939082FF939082FF939082FF939082FF939082FF9390
+      82FF9D755EFFA74E00BF0000000000000000A74E008A7EAEA5FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF7AB8B3FFA74E00B8000000000000
+      0000A74E0080919183FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF81A89EFFA74E00860000000000000000A74E0070939082FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF939082FFA74E0080000000000000
+      0000A74E0042A35B2BFF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF958573FFA74E005D0000000000000000A74E0026A74E00FF1CEDEEFF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FFA74E00FFA74E003F000000000000
+      000000000000A74E00FF56D7D6FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF42E1
+      E0FFA74E00FFA74E000B000000000000000000000000A74E00C273BEBAFF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF65CCC9FFA74E00DE00000000000000000000
+      000000000000A74E008E8B9C92FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF81AB
+      A2FFA74E00A400000000000000000000000000000000A74E004CA16340FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF9C7760FFA74E006100000000000000000000
+      000000000000A84F0003A74E00F45CD1CFFF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF48DEDEFFA74E
+      00FFA74E00140000000000000000000000000000000000000000A74E009E8A9E
+      93FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF85A69EFFA74E00AE0000000000000000000000000000
+      00000000000000000000A74E0025A74E00FF50DAD9FF00F1F3FF00F1F3FF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF3EE4E4FFA64F03FFA74E
+      004000000000000000000000000000000000000000000000000000000000A74E
+      0090997E6AFF2BEBECFF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF00F1
+      F3FF09F0F1FF958675FFA74E00AE000000000000000000000000000000000000
+      0000000000000000000000000000A74E0009A74E00CE978372FF2BEBECFF00F1
+      F3FF00F1F3FF00F1F3FF00F1F3FF00F1F3FF87A59CFFA74E00D8A74E00100000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000A74E0010A74E00CF988372FF3CE3E2FF00F1F3FF00F1F3FF2AEBECFF8D97
+      8AFFA74E00E4A74E002600000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000A74E000EA74E00A7A264
+      43FF66C8C4FF51DAD9FF9A7A64FFA74E00CFA74E001500000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000A74E0069A74E00EFA74E00FFA74E008DA84E
+      0007000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000171717DF171717D900000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000017171763171717FF171717FF1717175F0000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000171717081717
+      17E51E454CFF1D444BFF171717DF151515010000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000017171779171717FF3AADBFFF39ABBCFF171717FF1717
+      176B000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000017171710171717EF2153
+      5CFF4BE4FAFF4AE2F8FF1F4C54FF171717ED1717170E00000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000017171780171717FF3DBACCFF52D7ECFF53D2E6FF3CB6C8FF1717
+      17FF171717800000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000017171710171717EF235D66FF57C0
+      D2FF666666FF666666FF5CADBBFF235D66FF171717EF17171710000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000017171781171717FF3EBDD0FF56C8DBFF666666FF666666FF5BB0BFFF3EBD
+      D0FF171717FF1717178400000000000000000000000000000000000000000000
+      000000000000000000000000000017171716171717F2235D66FF4CE8FFFF50DD
+      F2FF666666FF666666FF56C7DAFF4CE8FFFF24616BFF171717F81717171B0000
+      0000000000000000000000000000000000000000000000000000000000001717
+      1796171717FF3FBFD2FF4CE8FFFF4CE8FFFF647579FF666666FF50DBF1FF4CE8
+      FFFF42C7DBFF171717FF1717179F000000000000000000000000000000000000
+      000000000000000000001717171F171717FD28707BFF4CE8FFFF4CE8FFFF4CE8
+      FFFF6098A3FF657578FF4CE8FFFF4CE8FFFF4CE8FFFF2B7D8AFF171717FF1717
+      17200000000000000000000000000000000000000000000000001717179F1717
+      17FF42CADEFF4CE8FFFF4CE8FFFF4CE8FFFF5AB6C6FF5F9AA5FF4CE8FFFF4CE8
+      FFFF4CE8FFFF43CDE1FF171717FF171717A40000000000000000000000000000
+      00000000000017171720171717FF2B7D8AFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8
+      FFFF54CFE3FF5AB7C7FF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF2C7E8BFF1717
+      17FF1717173500000000000000000000000000000000171717A2171717FF43CD
+      E1FF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8
+      FFFF4CE8FFFF4CE8FFFF45D1E6FF171717FF171717BD00000000000000000000
+      00001717172B171717FF2B7E8BFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF51D7
+      ECFF5EA1ADFF5F9DA8FF52D6EAFF4CE8FFFF4CE8FFFF4CE8FFFF4CE8FFFF3294
+      A3FF171717FF171717400000000000000000171717B6171717FF44CEE2FF4CE8
+      FFFF4CE8FFFF4CE8FFFF4CE8FFFF52D7EBFF61939DFF61919BFF55C9DBFF4CE8
+      FFFF4CE8FFFF4CE8FFFF4CE8FFFF48DBF1FF171717FF171717C0000000001717
+      1735171717FF19282BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E
+      8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E8BFF2B7E
+      8BFF1D444BFF171717FF1717174B17171743171717FF171717FF171717FF1717
+      17FF171717FF171717FF171717FF171717FF171717FF171717FF171717FF1717
+      17FF171717FF171717FF171717FF171717FF171717FF171717FF171717510000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000
+    }
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 488
+    Top = 368
+  end
+  object PopupMenu2: TPopupMenu
+    Left = 504
+    Top = 48
+    object MenuItem11: TMenuItem
+      Caption = 'MenuItem11'
+    end
+    object MenuItem12: TMenuItem
+      Caption = 'MenuItem12'
+    end
+    object MenuItem13: TMenuItem
+      Caption = 'MenuItem13'
+      object MenuItem16: TMenuItem
+        Caption = 'MenuItem16'
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'MenuItem17'
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'MenuItem18'
+        OnClick = MenuItem18Click
+      end
+    end
+    object MenuItem14: TMenuItem
+      Caption = 'MenuItem14'
+    end
+    object MenuItem15: TMenuItem
+      Caption = 'MenuItem15'
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 424
+    Top = 352
+  end
+  object ImageList2: TImageList
+    Left = 512
+    Top = 176
+    Bitmap = {
+      4C69060000001000000010000000FFFFFF00FF9400FFFF9400FFFF9400FFFF94
+      00FFFF9400FFFF9400FFFF9400FFFF9400FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF9400FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF9400FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF9400FFFF9400FFFFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FF9400FFFFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FF9400FFFF9400FFFF9400FFFF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FF9400FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF94
+      00FFFF9400FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00BF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFBF9778FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF97
+      78FFBF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFF
+      FF00BF9778FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00BF97
+      78FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00BF97
+      78FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFF
+      FF00BF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00BF9778FFFFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00BF9778FFFFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFF0000FFFF0000
+      FFFFFFFFFF00BF9778FFFFFFFF00BF9778FFFFFFFF000000FFFF0000FFFF0000
+      FFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF000000FFFFFFFFFF00FFFFFF00FFFF
+      FF000000FFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFF0000FFFF0000
+      FFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FFFF0000FFFF0000
+      FFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FF808080FF808080FF8080
+      80FF808080FF808080FF808080FF808080FF808080FF808080FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF008080
+      80FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00808080FFFFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00808080FF808080FF808080FF8080
+      80FFFFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004AB422FF4AB422FFFFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004AB422FF4AB422FFFFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF004AB422FF4AB422FF4AB422FF4AB422FF4AB422FF4AB4
+      22FFFFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF004AB422FF4AB422FF4AB422FF4AB422FF4AB422FF4AB4
+      22FFFFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004AB422FF4AB422FFFFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF004AB422FF4AB422FFFFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00808080FFFFFFFF00FFFFFF00808080FF808080FF808080FF8080
+      80FF808080FF808080FF808080FF808080FF808080FF808080FF808080FF8080
+      80FF808080FF808080FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00006AFFFF006AFFFF006AFFFF006AFFFF006A
+      FFFF006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00006AFFFF006AFFFF006AFFFF006AFFFF006A
+      FFFF006AFFFF006AFFFF006AFFFF006AFFFFFFFFFF00006AFFFF006AFFFF006A
+      FFFF006AFFFF006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00006AFFFF006AFFFF006AFFFF006AFFFF006AFFFF006A
+      FFFF006AFFFF006AFFFF006AFFFF006AFFFF006AFFFF006AFFFF006AFFFF006A
+      FFFF006AFFFF006AFFFF006AFFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00808080FF808080FF808080FF808080FF808080FF808080FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00567ABBFF567ABBFF567ABBFF567A
+      BBFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00567ABBFF567A
+      BBFF567ABBFF567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FFFFFF008080
+      80FF808080FF808080FF808080FF808080FF808080FF808080FF808080FFFFFF
+      FF00FFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FF9400FFFF94
+      00FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF9400FFFF94
+      00FFFFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00567ABBFFFFFFFF00FFFFFF00567ABBFF567ABBFF567ABBFF567A
+      BBFF567ABBFF567ABBFF567ABBFF567ABBFF567ABBFF567ABBFF567ABBFF567A
+      BBFF567ABBFF567ABBFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFBF9778FFBF9778FFBF97
+      78FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF97
+      78FFBF9778FFBF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00808080FF808080FF808080FF808080FF808080FF808080FFFFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00808080FF808080FF808080FF808080FF808080FF808080FFFFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFFFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00BF9778FFBF97
+      78FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF97
+      78FFFFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF97
+      78FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFFFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF97
+      78FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFFFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFBF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFFFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF97
+      78FFFFFFFF00BF9778FFBF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFFFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF9778FFFFFFFF00FFFFFF00BF97
+      78FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFFFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00FFFFFF00BF9778FFFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00BF9778FFFFFFFF00FFFFFF00FFFFFF00FFFFFF00BF9778FFBF97
+      78FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF9778FFBF97
+      78FFBF9778FFBF9778FFFFFFFF00
+    }
+  end
+  object PopupMenu3: TPopupMenu
+    Images = ImageList2
+    Left = 528
+    Top = 384
+    object MenuItem19: TMenuItem
+      Caption = 'MenuItem19'
+      GroupIndex = 1
+      ImageIndex = 0
+      RadioItem = True
+    end
+    object MenuItem20: TMenuItem
+      Caption = 'MenuItem20'
+      ImageIndex = 1
+      OnClick = MenuItem20Click
+    end
+    object MenuItem21: TMenuItem
+      Caption = 'MenuItem21'
+      ImageIndex = 2
+      object MenuItem27: TMenuItem
+        Caption = 'MenuItem27'
+        ImageIndex = 1
+      end
+      object MenuItem28: TMenuItem
+        Caption = 'MenuItem28'
+        ImageIndex = 2
+      end
+      object MenuItem29: TMenuItem
+        Caption = 'MenuItem29'
+        ImageIndex = 3
+      end
+    end
+    object MenuItem26: TMenuItem
+      Caption = 'MenuItem26'
+      Checked = True
+      GroupIndex = 1
+      ImageIndex = 3
+      RadioItem = True
+    end
+    object MenuItem22: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem23: TMenuItem
+      Caption = 'MenuItem23'
+      Enabled = False
+      ImageIndex = 4
+    end
+    object MenuItem24: TMenuItem
+      Caption = 'MenuItem24'
+      ImageIndex = 5
+    end
+  end
+end

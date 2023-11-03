@@ -1,0 +1,18 @@
+.arpa	infrastructure	Internet Architecture Board (IAB)
+.aero	sponsored	Societe Internationale de Telecommunications Aeronautique (SITA INC USA)
+.asia	sponsored	DotAsia Organisation Ltd.
+.cat	sponsored	Fundacio puntCAT
+.coop	sponsored	DotCooperation LLC
+.edu	sponsored	EDUCAUSE
+.gov	sponsored	General Services Administration Attn: QTDC, 2E08 (.gov Domain Registration)
+.int	sponsored	Internet Assigned Numbers Authority
+.jobs	sponsored	Employ Media LLC
+.mil	sponsored	DoD Network Information Center
+.museum	sponsored	Museum Domain Management Association
+.post	sponsored	Universal Postal Union
+.tel	sponsored	Telnames Ltd.
+.travel	sponsored	Dog Beach, LLC
+.xxx	sponsored	ICM Registry LLC
+.biz	generic-restricted	Registry Services, LLC
+.name	generic-restricted	VeriSign Information Services, Inc.
+.pro	generic-restricted	Afilias Limited

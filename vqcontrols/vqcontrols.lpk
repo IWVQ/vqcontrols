@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="vqcontrols"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="lib;A;lib\md;widgets"/>
+        <OtherUnitFiles Value="lib;A;B;widgets;lib\md;lib\animation;widgets\EditBox;widgets\ListBox;src;src\ListBox"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files Count="55">
+      <Item1>
+        <Filename Value="lib\vqControls.inc"/>
+        <Type Value="Include"/>
+      </Item1>
+      <Item2>
+        <Filename Value="lib\vqControlsH.inc"/>
+        <Type Value="Include"/>
+      </Item2>
+      <Item3>
+        <Filename Value="lib\vqCursors.lrs"/>
+        <Type Value="LRS"/>
+      </Item3>
+      <Item4>
+        <Filename Value="lib\vqFontUtils.pas"/>
+        <UnitName Value="vqFontUtils"/>
+      </Item4>
+      <Item5>
+        <Filename Value="lib\vqGraphics.inc"/>
+        <Type Value="Include"/>
+      </Item5>
+      <Item6>
+        <Filename Value="lib\vqGraphicsH.inc"/>
+        <Type Value="Include"/>
+      </Item6>
+      <Item7>
+        <Filename Value="lib\vqMathUtils.inc"/>
+        <Type Value="Include"/>
+      </Item7>
+      <Item8>
+        <Filename Value="lib\vqMathUtilsH.inc"/>
+        <Type Value="Include"/>
+      </Item8>
+      <Item9>
+        <Filename Value="lib\vqStringList.pas"/>
+        <UnitName Value="vqStringList"/>
+      </Item9>
+      <Item10>
+        <Filename Value="lib\vqStrings.inc"/>
+        <Type Value="Include"/>
+      </Item10>
+      <Item11>
+        <Filename Value="lib\vqStringsH.inc"/>
+        <Type Value="Include"/>
+      </Item11>
+      <Item12>
+        <Filename Value="lib\vqUtils.pas"/>
+        <UnitName Value="vqUtils"/>
+      </Item12>
+      <Item13>
+        <Filename Value="lib\vqThemes.pas"/>
+        <UnitName Value="vqThemes"/>
+      </Item13>
+      <Item14>
+        <Filename Value="lib\md\vqAutoPath.pas"/>
+        <UnitName Value="vqAutoPath"/>
+      </Item14>
+      <Item15>
+        <Filename Value="lib\md\vqAutoURL.pas"/>
+        <UnitName Value="vqAutoURL"/>
+      </Item15>
+      <Item16>
+        <Filename Value="lib\md\vqMDMarker.pas"/>
+        <UnitName Value="vqMDMarker"/>
+      </Item16>
+      <Item17>
+        <Filename Value="lib\md\vqTLDArray.inc"/>
+        <Type Value="Include"/>
+      </Item17>
+      <Item18>
+        <Filename Value="lib\vqDateTimeUtils.pas"/>
+        <UnitName Value="vqDateTimeUtils"/>
+      </Item18>
+      <Item19>
+        <Filename Value="lib\animation\vqAnimatedImages.pas"/>
+        <UnitName Value="vqAnimatedImages"/>
+      </Item19>
+      <Item20>
+        <Filename Value="lib\animation\vqAnimation.pas"/>
+        <UnitName Value="vqAnimation"/>
+      </Item20>
+      <Item21>
+        <Filename Value="lib\animation\vqAnimationPlayer.pas"/>
+        <UnitName Value="vqAnimationPlayer"/>
+      </Item21>
+      <Item22>
+        <Filename Value="lib\animation\vqAPNG.pas"/>
+        <UnitName Value="vqAPNG"/>
+      </Item22>
+      <Item23>
+        <Filename Value="lib\animation\vqAPNGReader.pas"/>
+        <UnitName Value="vqAPNGReader"/>
+      </Item23>
+      <Item24>
+        <Filename Value="lib\animation\vqAPNGWriter.pas"/>
+        <UnitName Value="vqAPNGWriter"/>
+      </Item24>
+      <Item25>
+        <Filename Value="lib\animation\vqGIF.pas"/>
+        <UnitName Value="vqGIF"/>
+      </Item25>
+      <Item26>
+        <Filename Value="VQControlsRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="VQControlsRegister"/>
+      </Item26>
+      <Item27>
+        <Filename Value="lib\vqThemes.lrs"/>
+        <Type Value="LRS"/>
+      </Item27>
+      <Item28>
+        <Filename Value="lib\vqColorMap.pas"/>
+        <UnitName Value="vqColorMap"/>
+      </Item28>
+      <Item29>
+        <Filename Value="lib\vqScrollingControl.pas"/>
+        <UnitName Value="vqScrollingControl"/>
+      </Item29>
+      <Item30>
+        <Filename Value="src\vqAnimate.pas"/>
+        <UnitName Value="vqAnimate"/>
+      </Item30>
+      <Item31>
+        <Filename Value="src\vqArrow.pas"/>
+        <UnitName Value="vqArrow"/>
+      </Item31>
+      <Item32>
+        <Filename Value="src\vqButtons.pas"/>
+        <UnitName Value="vqButtons"/>
+      </Item32>
+      <Item33>
+        <Filename Value="src\vqColorButton.pas"/>
+        <UnitName Value="vqColorButton"/>
+      </Item33>
+      <Item34>
+        <Filename Value="src\vqControlBar.pas"/>
+        <UnitName Value="vqControlBar"/>
+      </Item34>
+      <Item35>
+        <Filename Value="src\vqDial.pas"/>
+        <UnitName Value="vqDial"/>
+      </Item35>
+      <Item36>
+        <Filename Value="src\vqDivider.pas"/>
+        <UnitName Value="vqDivider"/>
+      </Item36>
+      <Item37>
+        <Filename Value="src\vqFontButton.pas"/>
+        <UnitName Value="vqFontButton"/>
+      </Item37>
+      <Item38>
+        <Filename Value="src\vqLedLabel.pas"/>
+        <UnitName Value="vqLedLabel"/>
+      </Item38>
+      <Item39>
+        <Filename Value="src\vqLedUtils.pas"/>
+        <UnitName Value="vqLedUtils"/>
+      </Item39>
+      <Item40>
+        <Filename Value="src\vqMarkLabel.pas"/>
+        <UnitName Value="vqMarkLabel"/>
+      </Item40>
+      <Item41>
+        <Filename Value="src\vqMenuBox.pas"/>
+        <UnitName Value="vqMenuBox"/>
+      </Item41>
+      <Item42>
+        <Filename Value="src\vqNotifier.pas"/>
+        <UnitName Value="vqNotifier"/>
+      </Item42>
+      <Item43>
+        <Filename Value="src\vqPageControl.pas"/>
+        <UnitName Value="vqPageControl"/>
+      </Item43>
+      <Item44>
+        <Filename Value="src\vqQuickButton.pas"/>
+        <UnitName Value="vqQuickButton"/>
+      </Item44>
+      <Item45>
+        <Filename Value="src\vqSlider.pas"/>
+        <UnitName Value="vqSlider"/>
+      </Item45>
+      <Item46>
+        <Filename Value="src\vqSwitch.pas"/>
+        <UnitName Value="vqSwitch"/>
+      </Item46>
+      <Item47>
+        <Filename Value="src\vqToolBar.pas"/>
+        <UnitName Value="vqToolBar"/>
+      </Item47>
+      <Item48>
+        <Filename Value="src\vqToolButton.pas"/>
+        <UnitName Value="vqToolButton"/>
+      </Item48>
+      <Item49>
+        <Filename Value="src\vqToolPanel.pas"/>
+        <UnitName Value="vqToolPanel"/>
+      </Item49>
+      <Item50>
+        <Filename Value="src\vqToolTip.pas"/>
+        <UnitName Value="vqToolTip"/>
+      </Item50>
+      <Item51>
+        <Filename Value="src\ListBox\vqFontListBox.pas"/>
+        <UnitName Value="vqFontListBox"/>
+      </Item51>
+      <Item52>
+        <Filename Value="src\ListBox\vqListBox.pas"/>
+        <UnitName Value="vqListBox"/>
+      </Item52>
+      <Item53>
+        <Filename Value="src\ListBox\vqListBoxBuffer.pas"/>
+        <UnitName Value="vqListBoxBuffer"/>
+      </Item53>
+      <Item54>
+        <Filename Value="src\ListBox\vqListBoxModel_p.pas"/>
+        <UnitName Value="vqListBoxModel_p"/>
+      </Item54>
+      <Item55>
+        <Filename Value="src\ListBox\vqListBoxUtils.pas"/>
+        <UnitName Value="vqListBoxUtils"/>
+      </Item55>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="BGRABitmapPack"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>

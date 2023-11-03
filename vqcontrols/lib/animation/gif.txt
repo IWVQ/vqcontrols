@@ -1,0 +1,426 @@
+GIF89a FORMAT SUMARY
+====================
+
+Gif data stream
+---------------
+
+- all integers are less significand byte first
+
+
+<GIF-data-stream> ::= header <logical-screen> <data>* trailer
+
+<logical-screen> ::= logical-screen-descriptor [global-color-table]
+
+<data> ::= <graphic-block> | <special-purpose-block>
+
+<graphic-block> ::= [graphic-control-extension] <graphic-rendering-block>
+
+<graphic-rendering-block> ::= <table-based-image> | plain-text-extension
+
+<table-based-image> ::= image-descriptor [local-color-table] image-data
+
+<special-purpose-block> ::= application-extension | comment-extension
+
+header                    ::= ...
+trailer                   ::= ...
+logical-screen-descriptor ::= ...
+global-color-table        ::= ...
+graphic-control-extension ::= ...
+plain-text-extension      ::= ...
+image-descriptor          ::= ...
+local-color-table         ::= ...
+image-data                ::= ...
+application-extension     ::= ...
+comment-extension         ::= ...
+
+Header
+------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+                           
+0   |               |                           
+    +-             -+                           
+1   |               |   Signature               3 bytes     GIF
+    +-             -+                           
+2   |               |                           
+    +---------------+                           
+3   |               |   Version                 3 bytes     89a | 87a
+    +-             -+                                       00a .. 99z
+4   |               |
+    +-             -+
+5   |               |
+    +---------------+
+
+Logical-screen-descriptor
+-------------------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+       
+0   |               |   Logical                 unsigned     
+    +-             -+   screen                              0 .. 65535
+1   |               |   width       
+    +---------------+       
+2   |               |   Logical                 unsigned    0 .. 65535
+    +-             -+   screen                  
+3   |               |   height      
+    +---------------+       
+4   | |     | |     |   <packed>        
+    +---------------+       
+5   |               |   Back color index        byte        0.255
+    +---------------+   
+6   |               |   Pixel aspect ratio      byte        0
+    +---------------+                                       1..255
+
+<packed> ::=    global-color-table-flag         1 bit
+                color-resolution                3 bits
+                sort-flag                       1 bit
+                size-of-global-color-table      3 bits
+
+
+
+
+Aspect-ratio = (Pixel-aspect-ratio + 15)/64
+
+Global-color-table
+------------------
+
+size in bytes = 3 *2^(size-of-global-color-table + 1)
+    
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +===============+       
+0   |               |   Red                     byte        
+    +-             -+                           
+1   |               |   Green                   byte        
+    +-             -+   
+2   |               |   Blue                    byte
+    +-             -+   
+3   |               |   Red                     byte
+    +-             -+       
+4   |               |   Green                   byte
+    +-             -+
+:   |     . . .     |   . . .
+    +-             -+
+767 |               |   Blue
+    +===============+   
+
+Image-descriptor
+----------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+       
+0   |               |   Image separator         byte        0x2C
+    +---------------+                           
+1   |               |   Image left              unsigned     0 .. 65535
+    +-             -+   position    
+2   |               |       
+    +---------------+   
+3   |               |   Image top               unsigned     0 .. 65535
+    +-             -+   position    
+4   |               |   
+    +---------------+                           
+5   |               |   Image width             unsigned     0 .. 65535
+    +-             -+       
+6   |               |       
+    +---------------+   
+7   |               |   Image height            unsigned     0 .. 65535
+    +-             -+   
+8   |               |   
+    +---------------+
+9   | | | |   |     |   <packed>
+    +---------------+   
+
+<packed> ::=    local-color-table-flag      1 bit
+                interlace-flag              1 bit
+                sort-flag                   1 bit
+                RESERVED                    2 bits
+                size-of-local-color-table   3 bits
+
+Local-color-table
+-----------------
+
+size in bytes = 3 *2^(size-of-local-color-table + 1)
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +===============+       
+0   |               |   Red                     byte        
+    +-             -+                           
+1   |               |   Green                   byte        
+    +-             -+   
+2   |               |   Blue                    byte
+    +-             -+   
+3   |               |   Red                     byte
+    +-             -+       
+4   |               |   Green                   byte
+    +-             -+
+:   |     . . .     |   . . .
+    +-             -+
+767 |               |   Blue
+    +===============+   
+
+Image-data
+----------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+       
+0   |               |   LZW minimum code        byte        
+    +---------------+   size                    
+    
+    +===============+
+    |               |         
+    /               /   Data sub blocks
+    |               |   
+    +===============+   
+
+Graphic-control-extension
+-------------------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+   
+0   |               |   Extension introducer    byte        0x21
+    +-             -+                                           
+1   |               |   Graphic control label   byte        0xF9
+    +---------------+
+    
+    +---------------+
+0   |               |   Block size              byte        4
+    +---------------+
+1   |     |     | | |   <packed>
+    +---------------+   
+2   |               |   Delay time              unsigned    0 .. 65535
+    +-             -+
+3   |               |
+    +---------------+
+4   |               |   Transparent color index byte        0 ... 255
+    +---------------+
+    
+    +---------------+
+0   |               |   Block terminator        byte        0
+    +---------------+
+
+
+<packed> ::=    RESERVED                3 bits
+                disposal-method         3 bits
+                user-input-flag         1 bit
+                transparent-color-flag  1 bit
+                
+Comment-extension
+-----------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+   
+0   |               |   Extension introducer    byte        0x21
+    +-             -+                                           
+1   |               |   comment label           byte        0xFE
+    +---------------+
+    
+    +===============+   
+    |               |   
+N   |               |   Comment data            data sub blocks
+    |               |
+    +===============+
+    
+    +---------------+
+0   |               |   Block terminator        byte        0
+    +---------------+
+
+Plain-text-extension
+--------------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+   
+0   |               |   Extension introducer    byte        0x21
+    +-             -+                                           
+1   |               |   Plain text label        byte        0x01
+    +---------------+
+    
+    +---------------+   
+0   |               |   Block size              byte        12
+    +---------------+                                           
+1   |               |   Text grid left          unsigned
+    +-             -+   position 
+2   |               |
+    +---------------+                                        
+3   |               |   Text grid top           unsigned
+    +-             -+   position
+4   |               |
+    +---------------+                                        
+5   |               |   Text grid width         unsigned
+    +-             -+
+6   |               |
+    +---------------+                                        
+7   |               |   Text grid height        unsigned
+    +-             -+
+8   |               |
+    +---------------+                                        
+9   |               |   Character cell width    byte
+    +---------------+
+10  |               |   Character cell height   byte
+    +---------------+                         
+11  |               |   Text fore color index   byte
+    +---------------+
+12  |               |   Text back color index   byte
+    +---------------+
+    
+    +===============+   
+    |               |   
+N   |               |   Plain text data         data sub blocks
+    |               |
+    +===============+
+    
+    +---------------+
+0   |               |   Block terminator        byte        0
+    +---------------+
+    
+Aplication-extension
+--------------------
+
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+   
+0   |               |   Extension introducer    byte        0x21
+    +-             -+                                           
+1   |               |   Application label       byte        0xFF
+    +---------------+
+    
+    +---------------+   
+0   |               |   Block size              byte        11
+    +---------------+                                           
+1   |               |   Application identifier  8 bytes
+    +-             -+    
+2   |               |   
+    +-             -+                                            
+3   |               |   
+    +-             -+   
+4   |               |
+    +-             -+   
+5   |               |   
+    +-             -+
+6   |               |
+    +-             -+   
+7   |               |   
+    +-             -+
+8   |               |
+    +---------------+                                        
+9   |               |   Authentication code     3 bytes
+    +-             -+
+10  |               |   
+    +-             -+   
+11  |               |   
+    +---------------+
+    
+    +===============+   
+    |               |   
+N   |               |   Application data        data sub blocks
+    |               |
+    +===============+
+    
+    +---------------+
+0   |               |   Block terminator        byte        0
+    +---------------+
+    
+
+Trailer
+-------
+    
+     7 6 5 4 3 2 1 0    Field                   Type        Value
+    +---------------+   
+0   |               |   Trailer                 byte        0x3B
+    +---------------+
+    
+SOME APPLICATION EXTENSIONS
+===========================
+
+Netscape
+--------
+
+<Netscape> ::= Netscape-header
+              [Netscape-animation | Netscape-buffering] block-terminator
+
+Netscape-header
+~~~~~~~~~~~~~~~
+
+     7 6 5 4 3 2 1 0    Field                
+    +---------------+   
+0   |     0x21      |   Extension introducer 
+    +-             -+                        
+1   |     0xFF      |   Application label    
+    +---------------+
+    
+    +---------------+   
+0   |       11      |   Block size             
+    +---------------+                          
+1   |               |   Application identifier 
+    +-             -+    
+2   |               |   
+    +-             -+                                            
+3   |               |   
+    +-             -+   
+4   |               |
+    +-   NETSCAPE  -+   
+5   |               |   
+    +-             -+
+6   |               |
+    +-             -+   
+7   |               |   
+    +-             -+
+8   |               |
+    +---------------+                                        
+9   |               |   Authentication code 
+    +-             -+
+10  |     2.0       |   
+    +-             -+   
+11  |               |   
+    +---------------+
+    
+Netscape-animation
+~~~~~~~~~~~~~~~~~~
+    
+    +===============+       
+0   |       3       |   sub block size
+    +---------------+
+1   |       1       |   sub block ID
+    +---------------+
+2   |               |   Loop count(less significand byte first)
+    +-             -+
+3   |               |
+    +===============+
+    
+Netscape-buffering
+~~~~~~~~~~~~~~~~~~
+
+    +===============+       
+0   |       5       |   sub block size
+    +---------------+
+1   |       2       |   sub block ID
+    +---------------+
+2   |               |   Buffer size(less significand byte first)
+    +-             -+
+3   |               |
+    +-             -+
+4   |               |
+    +-             -+
+5   |               |
+    +===============+
+    
+Block-terminator
+~~~~~~~~~~~~~~~~
+    
+    +---------------+
+0   |      0        |   Block terminator
+    +---------------+
+    
+Animation
+---------
+
+    identical to Netscape animation but with
+        Application identifier = ANIMEXTS
+        Aunthentication code = 1.0
+    
+TODO
+====
+
+- aspect ratio
+- pixel aspect ratio
+- color resolution 
+- how to render data
+- how gif uses LZW
+- using utf8 in comment

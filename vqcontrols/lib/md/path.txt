@@ -1,0 +1,38 @@
+Sintaxis especial para autopath
+===============================
+solo tipo windows y unix para lo demas usar el protocolo file://
+
+==== absolute paths
+
+NAME = All ASCII except CTL SPACE |?*/:<>\"
+EXT = NAME except .
+LETTER = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+NODE = NAME
+FILE = NAME[.EXT]
+
+[LETTER:]{(/\)[NAME]}
+
+---- relative path
+
+[NAME]{(/\)[NAME]}
+
+---- recognized extensions(only for image files)
+
+*.png
+*.bmp
+*.xpm
+*.cur
+*.ico
+*.icns
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.gif
+*.pbm
+*.pgm
+*.ppm
+
+*.gif
+*.apng
